@@ -1,0 +1,56 @@
+name: condasar_env
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core environment
+  - python=3.10.*
+  - pip
+
+  # Scientific computing
+  - numpy=1.26
+  - scipy=1.15
+  - pandas=2.3
+  - scikit-learn=1.7
+  - statsmodels
+
+  # Visualization and notebook tools
+  - matplotlib=3.10
+  - seaborn=0.13
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - tqdm
+  - natsort
+
+  # Chemistry and RDKit ecosystem
+  - rdkit=2025.03.6
+  - datamol
+  - mols2grid
+  - selfies
+
+  # Dimensionality reduction
+  - umap-learn
+  - pynndescent
+
+  # Image processing
+  - pillow
+  - imageio
+  - tifffile
+  - imagecodecs
+
+  # Data structures and utilities
+  - anndata
+  - h5py
+  - numba
+  - sqlalchemy
+
+  # Additional pip installs
+  - pip:
+      - tensorflow==2.11.*
+      - stardist==0.8.4
+      - csbdeep==0.8.1
+      - scikit-image==0.25.2
+      - useful-rdkit-utils==0.3.12
+
